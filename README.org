@@ -4,6 +4,6 @@
 pytyping is a typing game written in Python.
 
 - Images
-[[https://raw.githubusercontent.com/taiseiyo/manage-pytyping/master/images/pytyping.png][pytyping Image]]
+[https://raw.githubusercontent.com/taiseiyo/manage-pytyping/master/images/pytyping.png]
 
 ** 
