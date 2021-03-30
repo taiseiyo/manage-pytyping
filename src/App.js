@@ -107,7 +107,6 @@ let graph_data = (labels, scores) => {
     datasets: [
       {
         data: scores,
-        label: "taisei score",
         pointHoverBackgroundColor: "rgba(75,192,192,1)",
         backgroundColor: "rgba(75,192,192,0.4)",
         pointHitRadius: 10,
