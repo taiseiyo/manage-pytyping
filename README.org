@@ -1,2 +1,8 @@
 * manage-pytyping
 
+** pytyping
+pytyping is a typing game written in Python.
+
+
+[[]]
+** 
