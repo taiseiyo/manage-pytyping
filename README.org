@@ -1,10 +1,10 @@
-* manage-pytyping
+* pytyping
 ** What is pytyping?
 pytyping is a typing game written in Python.
 ** Images
 [[https://raw.githubusercontent.com/taiseiyo/manage-pytyping/master/images/pytyping.png]]
 
-* manage-pytyping
+* *manage-pytyping*
 ** Overview
 A tool for recording each pytyping score created by React 
 ** Images
@@ -13,4 +13,4 @@ A tool for recording each pytyping score created by React
 ** URL
 It is published using the hosting function of firebase
 
-[[URL is here][]]
+- [[https://manage-pytyping.web.app/][URL is here]]
