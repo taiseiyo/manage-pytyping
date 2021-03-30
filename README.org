@@ -8,4 +8,4 @@ pytyping is a typing game written in Python.
 ** Overview
 A tool for recording each pytyping score created by React 
 ** Images
-[[]]
+[[https://raw.githubusercontent.com/taiseiyo/manage-pytyping/master/images/score.png]]
