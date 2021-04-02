@@ -4,9 +4,24 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
+// let name_list = [
+//   "ohsaki",
+//   "taisei",
+//   "soma",
+//   "yuki",
+//   "keita",
+//   "michika",
+//   "joe",
+//   "kei",
+//   "takeaki",
+// ];
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App name={"taisei"} />
+    <App name={"hagi"} />
+    <App name={"michika"} />
+    <App name={"yuki"} />
   </React.StrictMode>,
   document.getElementById("root"),
 );
