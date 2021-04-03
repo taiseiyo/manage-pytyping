@@ -14,10 +14,10 @@ name in the list of name_list in index.js.
 ** Start
 
 #+begin_src bash
-   - git clone "URL"
-   - cd manage-pytyping
-   - npm install
-   - npm start
+   git clone "URL"
+   cd manage-pytyping
+   npm install
+   npm start
 #+end_src
 
 ** Programming language
