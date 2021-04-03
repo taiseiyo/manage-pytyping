@@ -4,13 +4,13 @@ import "./App.css";
 
 const App = ({name}) => {
   const [pydata, setPyData] = useState("");
+
   useEffect(() => {
     const flow = async () => {
-      const request = fetch(
+      const request = await fetch(
         "https://script.google.com/macros/s/AKfycbydKMo4v5V8oi5BXRKM6afe3BtNWBE_4SKnOsu7R2RlIY9C2kw7zVKFNesWJOsmre3Rgg/exec",
       );
-      const response = await request;
-      const text = await response.text();
+      const text = await request.text();
       setPyData(text);
     };
     flow();
