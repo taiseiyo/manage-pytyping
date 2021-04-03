@@ -6,7 +6,11 @@ pytyping is a typing game written in Python.
 
 * *manage-pytyping*
 ** Overview
-A tool for recording each pytyping score created by React 
+A tool for recording each pytyping score created by React.
+ 
+If you want the score of your name to be output to the table, add the
+name in the list of name_list in index.js.
+
 ** Programming language
 Front End
 - JavaScript
