@@ -11,6 +11,9 @@ A tool for recording each pytyping score created by React.
 If you want the score of your name to be output to the table, add the
 name in the list of name_list in index.js.
 
+** Start
+   - git clone "URL"
+   - 
 ** Programming language
 Front End
 - JavaScript
@@ -25,3 +28,26 @@ Back End
 It is published using the hosting function of firebase
 
 - [[https://manage-pytyping.web.app/][URL is here]]
+** Precautions
+
+When editing with emacs 
+
+#+begin_src 
+node_modules/react-scripts/config/webpackDevServer.config.js
+#+end_src
+
+Please edit. 
+
+- before
+#+begin_src 
+watchOptions: {
+ignored: ignoredFiles(paths.appSrc),
+},	
+#+end_src
+
+- after
+#+begin_src 
+watchOptions: {
+ignored: [ignoredFiles(paths.appSrc), "**/.#*", "**/*~", "**/#*#"],
+},
+#+end_src
