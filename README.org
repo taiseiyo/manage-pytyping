@@ -12,8 +12,14 @@ If you want the score of your name to be output to the table, add the
 name in the list of name_list in index.js.
 
 ** Start
+
+#+begin_src bash
    - git clone "URL"
-   - 
+   - cd manage-pytyping
+   - npm install
+   - npm start
+#+end_src
+
 ** Programming language
 Front End
 - JavaScript
