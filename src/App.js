@@ -51,21 +51,23 @@ let get_Weekly_Score = (pydata, name) => {
 
   for (let line of split_data) {
     if (line.match(name)) {
-      let dates = new Date(),
-        month = Number(dates.getMonth()) + 1;
+      let dates = new Date();
 
       for (let minus = 0; minus <= 7; minus++) {
-        let day = dates.getDate();
+        let day = dates.getDate(),
+          month = dates.getMonth() + 1;
+
         if (1 <= Number(day) && Number(day) <= 9) {
           day = "0" + dates.getDate();
         }
         let target = dates.getFullYear() + "-0" + month + "-" + day;
+
         if (line.slice(0, 10) === target) {
           score_array.push(line);
         }
         dates.setDate(dates.getDate() - 1);
-        if (dates.getDate() === 31) {
-          month = month - 1;
+        if (dates.getDate() === 0) {
+          dates.setMonth(dates.getMonth() - 1);
         }
       }
     }
