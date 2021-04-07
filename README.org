@@ -25,7 +25,7 @@ Front End
 - JavaScript
 - HTML, CSS
 Back End
-- GAS(google app script)
+- GAS(Google Apps Script)
 
 ** Images
 [[https://raw.githubusercontent.com/taiseiyo/manage-pytyping/master/images/score.png]]
