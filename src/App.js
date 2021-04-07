@@ -20,7 +20,7 @@ const App = ({name, text_data}) => {
     scores.push(score[5]);
   }
 
-  const {data, options} = graph_data(labels, scores);
+  const {data, options} = graph_data(labels, scores, name);
   return (
     <div className="App">
       <div className="caption">Pytyping の評価シート({name})</div>
@@ -66,7 +66,7 @@ let get_Weekly_Score = (pydata, name) => {
   return {score_array};
 };
 
-let graph_data = (labels, scores) => {
+let graph_data = (labels, scores, name) => {
   const color_data = [
       "rgba(212,6,6,0.2)",
       "rgba(0,153,255,0.2)",
@@ -84,7 +84,8 @@ let graph_data = (labels, scores) => {
         data: scores,
         pointHoverBackgroundColor: "rgba(75,192,192,1)",
         backgroundColor: color,
-        pointHitRadius: 10,
+        pointHitRadius: 20,
+        label: name,
       },
     ],
   };
