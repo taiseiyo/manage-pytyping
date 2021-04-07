@@ -2,18 +2,11 @@ import React, {useState, useEffect} from "react";
 import {Line} from "react-chartjs-2";
 import "./App.css";
 
-const App = ({name}) => {
+const App = ({name, text_data}) => {
   const [pydata, setPyData] = useState("");
 
   useEffect(() => {
-    const flow = async () => {
-      const request = await fetch(
-        "https://script.google.com/macros/s/AKfycbydKMo4v5V8oi5BXRKM6afe3BtNWBE_4SKnOsu7R2RlIY9C2kw7zVKFNesWJOsmre3Rgg/exec",
-      );
-      const text = await request.text();
-      setPyData(text);
-    };
-    flow();
+    setPyData(text_data);
   }, []); // 第 2 引数なし → アップデートした時に関数呼びだし
 
   let {score_array} = get_Weekly_Score(pydata, name);
@@ -50,7 +43,7 @@ let get_Weekly_Score = (pydata, name) => {
   let score_array = [];
 
   for (let line of split_data) {
-    if (line.match(name)) {
+    if (line.split("\t")[3] === name) {
       let dates = new Date();
 
       for (let minus = 0; minus <= 7; minus++) {
