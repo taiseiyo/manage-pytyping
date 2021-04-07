@@ -23,10 +23,8 @@ const App = ({name, text_data}) => {
   const {data, options} = graph_data(labels, scores);
   return (
     <div className="App">
-      <div style={{color: "blue", fontSize: 100}}>
-        Pytyping の評価シート({name})
-      </div>
-      <div>
+      <div className="caption">Pytyping の評価シート({name})</div>
+      <div className="figure">
         <Line
           chartType="LineChart"
           data={data}
@@ -99,10 +97,10 @@ let graph_data = (labels, scores) => {
             display: true,
             labelString: "日付",
             fontColor: "赤色",
-            fontSize: 60,
+            fontSize: 20,
           },
           ticks: {
-            fontSize: 60,
+            fontSize: 20,
           },
         },
       ],
@@ -113,13 +111,14 @@ let graph_data = (labels, scores) => {
             display: true,
             labelString: "得点",
             fontColor: "青色",
-            fontSize: 60,
+            fontSize: 20,
           },
           ticks: {
-            fontSize: 60,
+            fontSize: 20,
           },
         },
       ],
+      maintainAspectRatio: false,
     },
   };
   return {data, options};
