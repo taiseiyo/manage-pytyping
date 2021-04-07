@@ -21,8 +21,7 @@ const flow = async () => {
     "https://script.google.com/macros/s/AKfycbydKMo4v5V8oi5BXRKM6afe3BtNWBE_4SKnOsu7R2RlIY9C2kw7zVKFNesWJOsmre3Rgg/exec",
   );
   const data = await request.text();
-
-  ReactDOM.render(
+  await ReactDOM.render(
     <React.StrictMode>
       {name_list.map((one_name) => (
         <App name={one_name} text_data={data} />
