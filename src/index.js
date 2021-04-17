@@ -7,6 +7,7 @@ import reportWebVitals from "./reportWebVitals";
 let name_list = [
   "ohsaki",
   "taisei",
+  "syasin",
   "soma",
   "yuki",
   "keita",
